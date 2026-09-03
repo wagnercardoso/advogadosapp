@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+﻿import React, { useState, useMemo } from 'react';
 import { Task, LegalCase, TaskPriority } from '../types';
 import { Trash2, X, Plus, Calendar, AlertCircle, Scale, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 
@@ -134,7 +134,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       <div className="flex items-center justify-between border-b border-white/10 pb-4 pt-1">
         <div>
           <h2 className="text-2xl font-serif text-white flex items-center gap-2 font-['Cinzel',serif] tracking-wider">
-            <span className="w-1.5 h-5 bg-[#C5A059] inline-block rounded-none"></span>
+            <span className="w-1.5 h-5 bg-[#16a34a] inline-block rounded-none"></span>
             Agenda & Prazos
           </h2>
           <p className="text-white/40 text-xs mt-0.5">
@@ -148,7 +148,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             const input = document.getElementById('new-task-input');
             if (input) input.focus();
           }}
-          className="bg-[#C5A059] hover:bg-[#D4B069] text-black text-xs font-bold uppercase py-2 px-4 tracking-widest transition-all shadow-sm flex items-center gap-1.5"
+          className="bg-[#16a34a] hover:bg-[#15803d] text-white text-xs font-bold uppercase py-2 px-4 tracking-widest transition-all shadow-sm flex items-center gap-1.5"
         >
           <Plus size={14} strokeWidth={2.5} />
           <span>Nova Tarefa</span>
@@ -199,7 +199,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
               className="flex items-center justify-between px-4 py-2.5 text-xs hover:bg-white/5 transition-colors"
             >
               <span className="text-white/80 font-medium flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-[#C5A059]"></span>
+                <span className="w-1.5 h-1.5 bg-[#16a34a]"></span>
                 <span className="font-semibold text-white">{cat.category}</span>
                 <span className="text-white/40 font-normal">
                   ({cat.done} de {cat.total} feitas)
@@ -221,7 +221,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       {/* Add New Task Form */}
       <form onSubmit={handleAddTask} className="space-y-3 bg-[#0a0a0a] p-4 rounded-sm border border-white/10 shadow-lg">
         <p className="text-[10px] uppercase text-[#C5A059] tracking-widest font-bold flex items-center gap-2">
-          <span className="w-1 h-3 bg-[#C5A059]"></span> Cadastrar Tarefa / Compromisso
+          <span className="w-1 h-3 bg-[#16a34a]"></span> Cadastrar Tarefa / Compromisso
         </p>
 
         {/* Task Title Input */}
@@ -276,7 +276,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             id="add-task-btn"
             type="submit"
             disabled={!taskTitle.trim()}
-            className="px-5 py-2 bg-[#C5A059] hover:bg-[#D4B069] disabled:opacity-40 disabled:cursor-not-allowed text-black font-bold uppercase tracking-wider text-xs transition-all flex items-center justify-center gap-1.5 shadow-sm"
+            className="px-5 py-2 bg-[#16a34a] hover:bg-[#15803d] disabled:opacity-40 disabled:cursor-not-allowed text-black font-bold uppercase tracking-wider text-xs transition-all flex items-center justify-center gap-1.5 shadow-sm"
           >
             <Plus size={15} strokeWidth={2.5} />
             <span>Adicionar</span>
@@ -373,7 +373,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
           onClick={() => setActiveFilterCategory('Todas')}
           className={`px-3 py-1.5 rounded-sm text-xs font-medium uppercase tracking-wider whitespace-nowrap transition-all ${
             activeFilterCategory === 'Todas'
-              ? 'bg-[#C5A059] text-black font-bold shadow-sm'
+              ? 'bg-[#16a34a] text-white font-bold shadow-sm'
               : 'bg-white/5 text-white/60 hover:text-white hover:bg-white/10'
           }`}
         >
@@ -387,7 +387,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             onClick={() => setActiveFilterCategory(cat)}
             className={`px-3 py-1.5 rounded-sm text-xs font-medium uppercase tracking-wider whitespace-nowrap transition-all ${
               activeFilterCategory === cat
-                ? 'bg-[#C5A059] text-black font-bold shadow-sm'
+                ? 'bg-[#16a34a] text-white font-bold shadow-sm'
                 : 'bg-white/5 text-white/60 hover:text-white hover:bg-white/10'
             }`}
           >
@@ -427,7 +427,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                     onClick={() => handleToggleTask(task.id)}
                     className={`mt-0.5 w-4 h-4 rounded-none flex items-center justify-center transition-all flex-shrink-0 ${
                       task.completed
-                        ? 'bg-[#C5A059] text-black border border-[#C5A059]'
+                        ? 'bg-[#16a34a] text-white border border-[#16a34a]'
                         : 'bg-black/50 border border-white/30 hover:border-[#C5A059]'
                     }`}
                   >
@@ -464,7 +464,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                         <button
                           type="button"
                           onClick={() => onSelectCaseForStrategy && onSelectCaseForStrategy(linkedCase)}
-                          className="px-2 py-0.5 rounded-none bg-[#C5A059]/15 text-[#DFB86C] text-[10px] font-medium border border-[#C5A059]/40 hover:bg-[#C5A059]/25 transition-colors flex items-center gap-1"
+                          className="px-2 py-0.5 rounded-none bg-[#16a34a]/15 text-[#DFB86C] text-[10px] font-medium border border-[#C5A059]/40 hover:bg-[#16a34a]/25 transition-colors flex items-center gap-1"
                           title="Clique para ver detalhes do caso e estratégia de IA"
                         >
                           <Scale size={10} />

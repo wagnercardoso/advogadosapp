@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+﻿import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Task, LegalCase, LawyerProfile, SecuritySettings } from './types';
 import { StorageService } from './services/storage';
 import { Header } from './components/Header';
@@ -167,7 +167,7 @@ export default function App() {
             </div>
             <button
               onClick={() => setIsProfileModalOpen(true)}
-              className="px-3.5 py-1.5 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase tracking-widest text-[10px] transition-all flex-shrink-0"
+              className="px-3.5 py-1.5 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase tracking-widest text-[10px] transition-all flex-shrink-0"
             >
               Configurar Perfil
             </button>

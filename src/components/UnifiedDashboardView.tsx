@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+﻿import React, { useState, useMemo } from 'react';
 import { LegalCase, LawyerProfile, Task, TaskPriority } from '../types';
 import { ContractPdfGenerator } from '../services/contractPdfGenerator';
 import { CaseDetailsModal } from './CaseDetailsModal';
@@ -307,7 +307,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
     <div className="w-full max-w-4xl mx-auto space-y-5 pb-12">
       {/* Top Banner / Toast for PDF or Circunstâncias */}
       {pdfSuccessMessage && (
-        <div className="p-3 bg-[#C5A059]/20 border border-[#C5A059] text-white text-xs rounded-sm flex items-center justify-between shadow-lg">
+        <div className="p-3 bg-[#16a34a]/20 border border-[#C5A059] text-white text-xs rounded-sm flex items-center justify-between shadow-lg">
           <div className="flex items-center gap-2 font-medium">
             <CheckCircle2 size={16} className="text-[#C5A059]" />
             <span>{pdfSuccessMessage}</span>
@@ -322,7 +322,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4 pt-1">
         <div>
           <h2 className="text-xl sm:text-2xl font-serif text-white flex items-center gap-2 font-['Cinzel',serif] tracking-wider">
-            <span className="w-1.5 h-5 bg-[#C5A059] inline-block"></span>
+            <span className="w-1.5 h-5 bg-[#16a34a] inline-block"></span>
             Gestão Integrada: Clientes, Causas & Agenda
           </h2>
           <p className="text-white/50 text-xs mt-0.5">
@@ -339,7 +339,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
               setShowAddForm(true);
             }
           }}
-          className="bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold text-xs uppercase py-2.5 px-4 tracking-widest transition-all shadow-sm flex items-center justify-center gap-1.5 self-start sm:self-auto"
+          className="bg-[#16a34a] hover:bg-[#15803d] text-white font-bold text-xs uppercase py-2.5 px-4 tracking-widest transition-all shadow-sm flex items-center justify-center gap-1.5 self-start sm:self-auto"
         >
           <Plus size={15} strokeWidth={2.5} />
           <span>{showAddForm ? 'Fechar Formulário' : '+ Novo Cliente & Causa'}</span>
@@ -663,7 +663,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
               <button
                 type="button"
                 onClick={() => handleSaveCase('consultAi')}
-                className="w-full sm:w-auto px-5 py-2 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold text-xs uppercase tracking-widest transition-all shadow-md flex items-center justify-center gap-1.5 order-1 sm:order-4"
+                className="w-full sm:w-auto px-5 py-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold text-xs uppercase tracking-widest transition-all shadow-md flex items-center justify-center gap-1.5 order-1 sm:order-4"
               >
                 <Sparkles size={14} />
                 <span>Salvar & Ver Defesa (IA)</span>
@@ -681,7 +681,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
             onClick={() => setActiveSubTab('cases')}
             className={`px-3 py-1.5 rounded-sm text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
               activeSubTab === 'cases'
-                ? 'bg-[#C5A059] text-black shadow-sm'
+                ? 'bg-[#16a34a] text-white shadow-sm'
                 : 'bg-white/5 text-white/60 hover:text-white hover:bg-white/10'
             }`}
           >
@@ -694,7 +694,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
             onClick={() => setActiveSubTab('agenda')}
             className={`px-3 py-1.5 rounded-sm text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
               activeSubTab === 'agenda'
-                ? 'bg-[#C5A059] text-black shadow-sm'
+                ? 'bg-[#16a34a] text-white shadow-sm'
                 : 'bg-white/5 text-white/60 hover:text-white hover:bg-white/10'
             }`}
           >
@@ -750,7 +750,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
               {!showAddForm && (
                 <button
                   onClick={() => setShowAddForm(true)}
-                  className="mt-2 px-4 py-2 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase text-[11px] tracking-wider"
+                  className="mt-2 px-4 py-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase text-[11px] tracking-wider"
                 >
                   + Cadastrar Primeiro Caso
                 </button>
@@ -766,7 +766,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 border-b border-white/5 pb-2.5">
                   <div className="space-y-1">
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="px-2 py-0.5 bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/40 text-[10px] font-bold uppercase tracking-wider">
+                      <span className="px-2 py-0.5 bg-[#16a34a]/20 text-[#C5A059] border border-[#C5A059]/40 text-[10px] font-bold uppercase tracking-wider">
                         {caseItem.specialty}
                       </span>
                       <span className="text-[10px] text-white/40 uppercase font-mono">
@@ -838,7 +838,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
                   <button
                     type="button"
                     onClick={() => setModalCase(caseItem)}
-                    className="px-3.5 py-1.5 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase tracking-widest text-[10px] transition-all shadow-sm flex items-center gap-1.5"
+                    className="px-3.5 py-1.5 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase tracking-widest text-[10px] transition-all shadow-sm flex items-center gap-1.5"
                   >
                     <Sparkles size={12} />
                     <span>
@@ -922,7 +922,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
                 <button
                   type="submit"
                   disabled={!quickTaskTitle.trim()}
-                  className="w-full py-2 bg-[#C5A059] hover:bg-[#D4B069] disabled:opacity-40 text-black font-bold uppercase text-xs tracking-wider transition-all flex items-center justify-center gap-1"
+                  className="w-full py-2 bg-[#16a34a] hover:bg-[#15803d] disabled:opacity-40 text-white font-bold uppercase text-xs tracking-wider transition-all flex items-center justify-center gap-1"
                 >
                   <Plus size={14} />
                   <span>Adicionar Tarefa</span>
@@ -956,7 +956,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
                         onClick={() => handleToggleTask(task.id)}
                         className={`mt-0.5 w-4 h-4 rounded-none flex items-center justify-center transition-all flex-shrink-0 ${
                           task.completed
-                            ? 'bg-[#C5A059] text-black border border-[#C5A059]'
+                            ? 'bg-[#16a34a] text-white border border-[#16a34a]'
                             : 'bg-black/50 border border-white/30 hover:border-[#C5A059]'
                         }`}
                       >
@@ -981,7 +981,7 @@ export const UnifiedDashboardView: React.FC<UnifiedDashboardViewProps> = ({
                             <button
                               type="button"
                               onClick={() => setModalCase(linkedCase)}
-                              className="px-2 py-0.5 rounded-none bg-[#C5A059]/15 text-[#DFB86C] text-[10px] font-medium border border-[#C5A059]/40 hover:bg-[#C5A059]/25 transition-colors flex items-center gap-1"
+                              className="px-2 py-0.5 rounded-none bg-[#16a34a]/15 text-[#DFB86C] text-[10px] font-medium border border-[#C5A059]/40 hover:bg-[#16a34a]/25 transition-colors flex items-center gap-1"
                             >
                               <Scale size={10} />
                               <span className="truncate max-w-[140px]">{linkedCase.title} ({linkedCase.clientName})</span>

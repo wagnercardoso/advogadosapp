@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { JusticeLogo } from './JusticeLogo';
 import { LawyerProfile } from '../types';
 import { User, Scale, Lock, Download, Sparkles, Clock, Building2 } from 'lucide-react';
@@ -87,7 +87,7 @@ export const Header: React.FC<HeaderProps> = ({
           {canInstall && (
             <button
               onClick={handleInstallClick}
-              className="px-2.5 py-1.5 rounded-sm bg-[#C5A059]/20 hover:bg-[#C5A059]/30 border border-[#C5A059]/50 text-[#C5A059] text-[10px] font-bold uppercase tracking-wider transition-all flex items-center gap-1"
+              className="px-2.5 py-1.5 rounded-sm bg-[#16a34a]/20 hover:bg-[#16a34a]/30 border border-[#C5A059]/50 text-[#C5A059] text-[10px] font-bold uppercase tracking-wider transition-all flex items-center gap-1"
               title="Instalar Tec Justiça Lite no Celular"
             >
               <Download size={13} />
@@ -139,7 +139,7 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <Scale size={14} className="text-[#C5A059]" />
             <span>Gestão & Clientes</span>
-            <span className="px-1 py-0.2 bg-[#C5A059]/20 text-[#C5A059] text-[9px] rounded font-bold uppercase hidden sm:inline">
+            <span className="px-1 py-0.2 bg-[#16a34a]/20 text-[#C5A059] text-[9px] rounded font-bold uppercase hidden sm:inline">
               IA & Contratos
             </span>
           </button>
@@ -156,7 +156,7 @@ export const Header: React.FC<HeaderProps> = ({
             <Clock size={13} className="text-[#C5A059]" />
             <span>Prazos</span>
             {pendingAlertsCount > 0 && (
-              <span className="ml-1 px-1.5 py-0.2 rounded-full bg-[#C5A059] text-black text-[10px] font-bold">
+              <span className="ml-1 px-1.5 py-0.2 rounded-full bg-[#16a34a] text-white text-[10px] font-bold">
                 {pendingAlertsCount}
               </span>
             )}

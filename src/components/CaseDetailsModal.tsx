@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { LegalCase, LawyerProfile, Task } from '../types';
 import { LegalAiEngine, buildGoogleLegalSearchUrls } from '../services/legalAiEngine';
 import { ContractPdfGenerator } from '../services/contractPdfGenerator';
@@ -176,7 +176,7 @@ export const CaseDetailsModal: React.FC<CaseDetailsModalProps> = ({
             <button
               type="button"
               onClick={handleDownloadPdfContract}
-              className="px-2.5 py-1.5 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase tracking-wider text-[10px] rounded-sm transition-all flex items-center gap-1 shadow-sm"
+              className="px-2.5 py-1.5 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase tracking-wider text-[10px] rounded-sm transition-all flex items-center gap-1 shadow-sm"
               title="Gerar e baixar contrato de honorários em PDF"
             >
               <FileDown size={13} />
@@ -310,7 +310,7 @@ export const CaseDetailsModal: React.FC<CaseDetailsModalProps> = ({
                   type="button"
                   disabled={!newCircumstance.trim() || loadingStrategy}
                   onClick={() => handleGenerateStrategy(newCircumstance.trim())}
-                  className="px-4 py-2 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase tracking-wider text-xs transition-all disabled:opacity-40 flex items-center gap-1.5 shadow-md"
+                  className="px-4 py-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase tracking-wider text-xs transition-all disabled:opacity-40 flex items-center gap-1.5 shadow-md"
                 >
                   {loadingStrategy ? (
                     <>
@@ -347,7 +347,7 @@ export const CaseDetailsModal: React.FC<CaseDetailsModalProps> = ({
                 type="button"
                 onClick={() => handleGenerateStrategy()}
                 disabled={loadingStrategy}
-                className="px-6 py-2.5 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase tracking-widest text-xs transition-all shadow-md flex items-center justify-center gap-2 mx-auto disabled:opacity-40"
+                className="px-6 py-2.5 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase tracking-widest text-xs transition-all shadow-md flex items-center justify-center gap-2 mx-auto disabled:opacity-40"
               >
                 {loadingStrategy ? (
                   <>
@@ -513,7 +513,7 @@ export const CaseDetailsModal: React.FC<CaseDetailsModalProps> = ({
                     <button
                       type="button"
                       onClick={handleImportChecklistToAgenda}
-                      className="px-2.5 py-1 bg-[#C5A059] hover:bg-[#D4B069] text-black text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 transition-all"
+                      className="px-2.5 py-1 bg-[#16a34a] hover:bg-[#15803d] text-white text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 transition-all"
                     >
                       <PlusCircle size={13} />
                       <span>Adicionar à Minha Agenda</span>
@@ -527,7 +527,7 @@ export const CaseDetailsModal: React.FC<CaseDetailsModalProps> = ({
                       key={idx}
                       className="flex items-start gap-2.5 text-xs text-white/90 bg-[#111111] p-2.5 rounded-none border border-white/5"
                     >
-                      <span className="w-4 h-4 rounded-none bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/40 flex items-center justify-center text-[9px] font-bold flex-shrink-0 mt-0.5">
+                      <span className="w-4 h-4 rounded-none bg-[#16a34a]/20 text-[#C5A059] border border-[#C5A059]/40 flex items-center justify-center text-[9px] font-bold flex-shrink-0 mt-0.5">
                         {idx + 1}
                       </span>
                       <span>{action}</span>
@@ -616,7 +616,7 @@ export const CaseDetailsModal: React.FC<CaseDetailsModalProps> = ({
               <button
                 type="submit"
                 disabled={!consultQuestion.trim() || consultLoading}
-                className="px-4 py-2 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase text-xs transition-all disabled:opacity-40 flex items-center gap-1.5"
+                className="px-4 py-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase text-xs transition-all disabled:opacity-40 flex items-center gap-1.5"
               >
                 {consultLoading ? <RefreshCw size={13} className="animate-spin" /> : <Send size={13} />}
                 <span>Enviar</span>

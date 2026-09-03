@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+﻿import React, { useState, useRef } from 'react';
 import { LawyerProfile, SecuritySettings, LegalSpecialty } from '../types';
 import { hashSecurityPin, StorageService } from '../services/storage';
 import { User, Scale, ShieldCheck, KeyRound, Download, Upload, Sparkles, X, Check, AlertCircle } from 'lucide-react';
@@ -297,7 +297,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
                 </button>
                 <button
                   type="submit"
-                  className="px-5 py-2 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase text-xs tracking-widest transition-all shadow-sm"
+                  className="px-5 py-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase text-xs tracking-widest transition-all shadow-sm"
                 >
                   Salvar Perfil
                 </button>
@@ -375,7 +375,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
               <div className="flex justify-end pt-2 border-t border-white/10">
                 <button
                   type="submit"
-                  className="px-5 py-2 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase text-xs tracking-widest transition-all"
+                  className="px-5 py-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase text-xs tracking-widest transition-all"
                 >
                   Atualizar Segurança
                 </button>
@@ -412,7 +412,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
                   <button
                     type="button"
                     onClick={handleExportBackup}
-                    className="w-full py-2 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold text-[11px] uppercase tracking-wider transition-all"
+                    className="w-full py-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold text-[11px] uppercase tracking-wider transition-all"
                   >
                     Baixar Backup
                   </button>
@@ -476,7 +476,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
                 <button
                   type="button"
                   onClick={handleSaveProfileSubmit}
-                  className="px-5 py-2 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase text-xs tracking-widest transition-all"
+                  className="px-5 py-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase text-xs tracking-widest transition-all"
                 >
                   Salvar Preferências
                 </button>

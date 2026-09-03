@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Task, LegalCase } from '../types';
 import { AlertTriangle, Calendar, Clock, CheckCircle, Scale, Plus } from 'lucide-react';
 
@@ -72,7 +72,7 @@ export const DeadlinesAlertsView: React.FC<DeadlinesAlertsViewProps> = ({
         <button
           type="button"
           onClick={onGoToAgenda}
-          className="px-3 py-1.5 bg-[#C5A059] hover:bg-[#D4B069] text-black text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 transition-all"
+          className="px-3 py-1.5 bg-[#16a34a] hover:bg-[#15803d] text-white text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 transition-all"
         >
           <Plus size={13} />
           <span>Novo Prazo</span>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { JusticeLogo } from './JusticeLogo';
 import { SecuritySettings, LawyerProfile } from '../types';
 import { hashSecurityPin, StorageService } from '../services/storage';
@@ -320,7 +320,7 @@ export const AuthLockModal: React.FC<AuthLockModalProps> = ({
                   key={num}
                   type="button"
                   onClick={() => handleKeypadPress(num)}
-                  className="h-11 bg-[#111111] hover:bg-[#1a1a1a] active:bg-[#C5A059]/20 border border-white/10 hover:border-[#C5A059]/40 text-base font-mono text-white rounded-sm transition-colors flex items-center justify-center font-bold"
+                  className="h-11 bg-[#111111] hover:bg-[#1a1a1a] active:bg-[#16a34a]/20 border border-white/10 hover:border-[#C5A059]/40 text-base font-mono text-white rounded-sm transition-colors flex items-center justify-center font-bold"
                 >
                   {num}
                 </button>
@@ -335,14 +335,14 @@ export const AuthLockModal: React.FC<AuthLockModalProps> = ({
               <button
                 type="button"
                 onClick={() => handleKeypadPress('0')}
-                className="h-11 bg-[#111111] hover:bg-[#1a1a1a] active:bg-[#C5A059]/20 border border-white/10 text-base font-mono text-white rounded-sm transition-colors flex items-center justify-center font-bold"
+                className="h-11 bg-[#111111] hover:bg-[#1a1a1a] active:bg-[#16a34a]/20 border border-white/10 text-base font-mono text-white rounded-sm transition-colors flex items-center justify-center font-bold"
               >
                 0
               </button>
               <button
                 type="button"
                 onClick={() => handleUnlockSubmit()}
-                className="h-11 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold text-xs rounded-sm transition-colors flex items-center justify-center uppercase tracking-widest"
+                className="h-11 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold text-xs rounded-sm transition-colors flex items-center justify-center uppercase tracking-widest"
               >
                 Entrar
               </button>
@@ -387,7 +387,7 @@ export const AuthLockModal: React.FC<AuthLockModalProps> = ({
               <button
                 type="button"
                 onClick={handleEmergencyReset}
-                className="px-3.5 py-1.5 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold text-xs uppercase tracking-wider"
+                className="px-3.5 py-1.5 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold text-xs uppercase tracking-wider"
               >
                 Confirmar e Criar Novo PIN
               </button>

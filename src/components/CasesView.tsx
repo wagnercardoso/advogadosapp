@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { LegalCase, LawyerProfile, Task } from '../types';
 import { Scale, Plus, Sparkles, Trash2, Edit3, User, Phone, MessageCircle, FileText, Search, ShieldCheck, ChevronRight, CheckCircle2, Clock } from 'lucide-react';
 import { CaseDetailsModal } from './CaseDetailsModal';
@@ -185,7 +185,7 @@ export const CasesView: React.FC<CasesViewProps> = ({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4 pt-1">
         <div>
           <h2 className="text-xl sm:text-2xl font-serif text-white flex items-center gap-2 font-['Cinzel',serif] tracking-wider">
-            <span className="w-1.5 h-5 bg-[#C5A059] inline-block"></span>
+            <span className="w-1.5 h-5 bg-[#16a34a] inline-block"></span>
             Clientes & Causas
           </h2>
           <p className="text-white/50 text-xs mt-0.5">
@@ -199,7 +199,7 @@ export const CasesView: React.FC<CasesViewProps> = ({
             if (showAddForm) resetForm();
             else setShowAddForm(true);
           }}
-          className="bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold text-xs uppercase py-2.5 px-4 tracking-widest transition-all shadow-sm flex items-center justify-center gap-1.5 self-start sm:self-auto"
+          className="bg-[#16a34a] hover:bg-[#15803d] text-white font-bold text-xs uppercase py-2.5 px-4 tracking-widest transition-all shadow-sm flex items-center justify-center gap-1.5 self-start sm:self-auto"
         >
           <Plus size={14} strokeWidth={2.5} />
           <span>{showAddForm ? 'Fechar Formulário' : '+ Cadastrar Cliente & Causa'}</span>
@@ -499,7 +499,7 @@ export const CasesView: React.FC<CasesViewProps> = ({
               <button
                 type="button"
                 onClick={() => handleSaveCase(true)}
-                className="w-full sm:w-auto px-6 py-2.5 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold text-xs uppercase tracking-widest transition-all shadow-md flex items-center justify-center gap-1.5 order-1 sm:order-3"
+                className="w-full sm:w-auto px-6 py-2.5 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold text-xs uppercase tracking-widest transition-all shadow-md flex items-center justify-center gap-1.5 order-1 sm:order-3"
               >
                 <Sparkles size={14} />
                 <span>Salvar & Consultar Defesa (IA)</span>
@@ -556,7 +556,7 @@ export const CasesView: React.FC<CasesViewProps> = ({
           {!showAddForm && (
             <button
               onClick={() => setShowAddForm(true)}
-              className="mt-2 px-4 py-2 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase text-[11px] tracking-wider"
+              className="mt-2 px-4 py-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase text-[11px] tracking-wider"
             >
               + Cadastrar Primeiro Caso
             </button>
@@ -573,7 +573,7 @@ export const CasesView: React.FC<CasesViewProps> = ({
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 border-b border-white/5 pb-2.5">
                 <div className="space-y-1">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="px-2 py-0.5 bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/40 text-[10px] font-bold uppercase tracking-wider">
+                    <span className="px-2 py-0.5 bg-[#16a34a]/20 text-[#C5A059] border border-[#C5A059]/40 text-[10px] font-bold uppercase tracking-wider">
                       {caseItem.specialty}
                     </span>
                     <span className="text-[10px] text-white/40 uppercase font-mono">
@@ -625,7 +625,7 @@ export const CasesView: React.FC<CasesViewProps> = ({
                 <button
                   type="button"
                   onClick={() => setModalCase(caseItem)}
-                  className="px-3.5 py-1.5 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase tracking-widest text-[10px] transition-all shadow-sm flex items-center gap-1.5"
+                  className="px-3.5 py-1.5 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase tracking-widest text-[10px] transition-all shadow-sm flex items-center gap-1.5"
                 >
                   <Sparkles size={12} />
                   <span>
