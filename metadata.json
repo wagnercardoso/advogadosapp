@@ -1,0 +1,6 @@
+{
+  "name": "Tec Justiça Lite",
+  "description": "Agenda funcional e estratégica para advogados com IA para teses de defesa, leis aplicáveis e gestão de prazos e tarefas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

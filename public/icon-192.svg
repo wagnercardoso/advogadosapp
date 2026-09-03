@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" fill="#050505" rx="32"/>
+  <rect x="6" y="6" width="180" height="180" fill="none" stroke="#C5A059" stroke-width="2" stroke-opacity="0.3" rx="28"/>
+  <g transform="translate(36, 36) scale(2.5)" stroke="#C5A059" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Base -->
+    <path d="M16 44h16" />
+    <path d="M24 44V8" />
+    <!-- Beam -->
+    <path d="M6 14h36" />
+    <!-- Left Scale -->
+    <path d="M6 14l-4 14h12l-4-14" />
+    <path d="M2 28a6 6 0 0 0 12 0" fill="#C5A059" fill-opacity="0.2"/>
+    <!-- Right Scale -->
+    <path d="M42 14l-4 14h12l-4-14" />
+    <path d="M38 28a6 6 0 0 0 12 0" fill="#C5A059" fill-opacity="0.2"/>
+    <!-- Center Finial -->
+    <circle cx="24" cy="7" r="2.5" fill="#C5A059" stroke="#050505" stroke-width="1"/>
+  </g>
+</svg>
