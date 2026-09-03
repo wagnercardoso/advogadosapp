@@ -1,7 +1,9 @@
 {
   "name": "Tec Justiça Lite",
   "short_name": "TecJustiça",
+  "version": "1.1",
   "description": "Agenda funcional e estratégica para advogados com IA para teses de defesa, leis aplicáveis e gestão de prazos e clientes.",
+
   "start_url": "/",
   "display": "standalone",
   "background_color": "#050505",
