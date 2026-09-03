@@ -270,7 +270,7 @@ export const AuthLockModal: React.FC<AuthLockModalProps> = ({
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full py-2.5 bg-[#C5A059] hover:bg-[#D4B069] text-black font-bold uppercase tracking-widest text-xs transition-all shadow-md flex items-center justify-center gap-2 mt-3 disabled:opacity-40"
+              className="w-full py-2.5 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold uppercase tracking-widest text-xs transition-all shadow-md flex items-center justify-center gap-2 mt-3 disabled:opacity-40"
             >
               <KeyRound size={15} />
               <span>{isLoading ? 'Configurando...' : 'Criar Passe & Entrar'}</span>
